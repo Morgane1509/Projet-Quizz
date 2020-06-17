@@ -1,0 +1,49 @@
+.utile1{
+    background-color: #51bfd0;
+}
+
+.utile1-op10{
+    background-color: #51bfd0;
+    opacity: 10%;
+}
+
+.utile2{
+    background-color: #042425;
+}
+
+.utile3{
+    background-color: #3addd6;
+}
+
+.utile4{
+    background-color: #5e90af;
+}
+
+.utile5{
+    background-color: #818181;
+}
+.color5{
+    color: #818181;
+}
+.utile6{
+    background-color: #e56946;
+}
+.utile7{
+    background-color: #f8f3f0;
+}
+
+.opensans{
+    font-family: 'Open Sans', 'Comfortaa', Arial, Helvetica, sans-serif;
+}
+
+.myriadpro{
+    font-family: 'Myriad Pro', 'Comfortaa', Arial, Helvetica, sans-serif;
+}
+
+.opacity-down{
+    opacity: 20%;
+}
+
+.top{
+    top:25%;
+}

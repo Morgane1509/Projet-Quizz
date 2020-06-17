@@ -18,41 +18,6 @@ class Validator {
     }
 }
 
-public function sup10000($value,$key,$errorMessage="Le nombre doit etre superieur à 10000"){
-    $this->is_positif($value,$key);
-    if($this->is_valid()){
-        if($value<=10000){
-          $this->errors[$key]= $errorMessage;
-        }
-      }
-}
-
-public static function estPremier($value){
-        $cpt = 0;
-        for($i=1; $i<=$value; $i++){
-            if(($value % $i) === 0){
-                $cpt++;
-                if($cpt>2){
-                break;
-                }
-            }
-        }
-        if($cpt === 2){
-            return $value;
-        }
-    
-}
-
-public static function moyenne($table){
-    $sum = 0;
-    foreach($table as $value){
-        $sum += $value; 
-    }
-    return $sum/count($table);
-}
-
-
-
 /*
   Longueur positif
   Largeur positif
@@ -93,6 +58,7 @@ public function  is_empty($nbre,$key,$sms=null){
 
         }
     }
+
 //Expressions Régulières
 public function  is_email($valeur,$key,$sms=null){
     $regex = "#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#";
@@ -110,7 +76,6 @@ public function  is_telephone($valeur,$key,$sms=null){
         $this->errors[$key] = $sms;
     }
 }
-
 
 
 
